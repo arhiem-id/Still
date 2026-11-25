@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">STILL.</string>
+    <string name="app_tagline">The Editorial Color Studio.</string>
+    <string name="nav_discover">Discover</string>
+    <string name="nav_studio">Studio</string>
+    <string name="nav_library">Library</string>
+</resources>

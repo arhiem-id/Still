@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-still-ink: #191919;
+  --color-still-paper: #E9E3D8;
+  --color-still-taupe: #A58C73;
+  --color-still-olive: #77796D;
+
+  --color-paper-low: #E3DCCF;
+  --color-paper-high: #DCD4C5;
+  --color-hairline-light: #CFC6B7;
+  --color-muted-ink: #5A5952;
+
+  --color-ink-low: #21201E;
+  --color-ink-high: #2A2926;
+  --color-hairline-dark: #34322E;
+  --color-muted-paper: #A7A196;
+
+  --font-serif: "EB Garamond", Georgia, Cambria, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@layer base {
+  html {
+    background-color: #E9E3D8;
+    color: #191919;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html.dark {
+    background-color: #191919;
+    color: #E9E3D8;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: inherit;
+    color: inherit;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle custom scrollbars matching paper/ink palette */
+.still-scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.still-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.still-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(165, 140, 115, 0.35);
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="still_ink">#FF191919</color>
+    <color name="still_icon_bg">#FF1D1D1D</color>
+    <color name="still_paper">#FFE9E3D8</color>
+    <color name="still_taupe">#FFA58C73</color>
+    <color name="still_olive">#FF77796D</color>
+</resources>
